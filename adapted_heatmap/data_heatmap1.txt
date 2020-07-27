@@ -1,0 +1,11 @@
+ADM	ANG	ANXA1	BGN	C1R	CASP4	CAV1	CCL2	CCL20	COL4A2	COL5A1	DCN	DPP4	EGFR	EMP3	FN1	FSTL1	G0S2	HMOX1	IGFBP3	IL6	ISG20	ITGA5	LDHA	LGALS3	LIF	LOX	LUM	MMP11	MMP14
+Epithelial mesenchymal transition	0	0	0	1	0	0	0	0	0	1	1	1	0	0	1	1	1	0	0	1	1	0	1	0	0	0	1	1	0	1
+Coagulation	0	1	1	0	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1
+Hypoxia	1	0	0	1	0	0	1	0	0	0	1	1	0	1	0	0	0	0	1	1	1	1	0	1	0	0	1	0	0	0
+KRAS signaling up	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	1	0	0	1	0
+Apoptosis	0	0	1	1	0	1	1	0	0	0	0	1	0	0	0	0	0	0	1	0	1	1	0	0	1	0	0	1	0	0
+Complement	0	1	0	0	1	1	0	0	0	1	0	0	1	0	0	1	0	0	0	0	1	0	0	0	1	0	0	0	0	1
+Inflammatory response	1	0	0	0	0	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	1	0	1	0	0	1	0	0	0	1
+Angiogenesis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0
+TNFA signaling via NFKB	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	1	0	0	0	0
+Glycolysis	0	1	0	0	0	0	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	1	0	1	0	0	0	0	0	0

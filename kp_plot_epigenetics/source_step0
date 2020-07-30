@@ -1,0 +1,2 @@
+#Create symbolic links to ENCODE data ###########################################
+ln -s /home/projects/current/gguardia/code_test/additional_data/wgEncodeBroadH* .

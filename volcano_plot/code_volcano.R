@@ -10,6 +10,9 @@ df = read.table("data_volcano.txt", header=T)
 #Log-transform FDR values (-log10)
 df$FDR = log(df$FDR,10)*(-1)
 
+#Put infinite values into top of graph
+df[is.infinite(df$FDR),]$FDR <- max(df[!is.infinite(df$FDR),]$FDR) + 10
+
 #Add column with direction
 df$direction = "down"
 df[df$log2FC>0,]$direction <- "up"
@@ -42,7 +45,7 @@ pp=ggplot(df, aes(log2FC, FDR)) + geom_point(aes(col = direction), size = 1, alp
   theme_classic() +
   theme(legend.title = element_blank(), legend.position = "top", legend.text = element_text(size = 10),
         axis.title = element_text(size = 12, face = "bold"), axis.text = element_text(size = 10)) +
-  geom_label_repel(aes(label = ifelse(df$labels, as.character(df$gene),"")), 
+  geom_label_repel(aes(label = ifelse(labels, as.character(gene),"")), 
                    size = 2, box.padding = unit(1.0, "lines"), label.padding = unit(0.2, "lines"),
                    fill="gray", color="white", segment.size  = 0.1, segment.color = "black")
 ggsave("volcano_plot2.pdf", width=4, height=3)

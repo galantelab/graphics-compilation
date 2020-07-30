@@ -17,4 +17,4 @@ fit = coxph(Surv(OS.time, OS) ~ LCK + age.diagnosis + gender + MGMT.status, data
 pdf("forest_plot.pdf")
 pp = suppressWarnings(forest_model(model = fit, exponentiate = T, recalculate_width = T, recalculate_height = T))
 print(pp, newpage = FALSE)
-dev.off()
+garbage=dev.off()

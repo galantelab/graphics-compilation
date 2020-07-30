@@ -16,4 +16,4 @@ seqlevelsStyle(genes) <- "UCSC"
 pdf("kpPlotMarkers.pdf",width=5, height=5)
 kp <- plotKaryotype(genome="hg38", chromosomes = c("chr1", "chr6", "chr7", "chr9", "chr11"), plot.type=1)
 kpPlotMarkers(kp, data=genes, labels=genes$hgnc_symbol, text.orientation = "horizontal", r1=0.5, cex=0.8, adjust.label.position = FALSE)
-dev.off()
+garbage=dev.off()

@@ -75,7 +75,7 @@ karyoplot <- plotKaryotype(zoom=region, plot.params = pp)
 kpAddBaseNumbers(karyoplot, tick.dist = 3000, digits=3)
 kpPlotTranscripts(karyoplot, data=mylist, y0=c(0, 0.4), y1=c(0.2, 0.6), r0=0, r1=0.3, 
                   transcript.name.position = "left", transcript.name.cex=0.8)
-dev.off()
+garbage=dev.off()
 
 #Make colored plot
 pdf("kpPlotTranscripts_ERN2_colored.pdf",height=3,width=5)
@@ -86,5 +86,5 @@ kpPlotTranscripts(karyoplot, data=mylist, y0=c(0, 0.4), y1=c(0.2, 0.6), r0=0, r1
                   coding.exons.col="cyan4", coding.exons.border.col="cyan4",
                   non.coding.exons.col="coral3", non.coding.exons.border.col="coral3",
                   introns.col="gray48", marks.col="gray48")
-dev.off()
+garbage=dev.off()
 

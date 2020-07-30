@@ -5,6 +5,7 @@ library(tidyverse)
 
 #Read file and reorder factor levels
 data = read.table("data_circular_barplot.txt", header=T)
+data$group = as.factor(data$group)
 data$group = factor(data$group,levels(data$group)[c(3,1:2,4)])
 
 #Add 2 empty values (bars) at the end of each group
@@ -49,5 +50,5 @@ ggplot(data, aes(x=as.factor(id), y=value, fill=group)) +
   geom_text(data=base_data, aes(x = title, y = -18, label=group), #Add group labels
             hjust=c(1,1,0,0), colour = "black", alpha=0.8, 
             size=2.5, fontface="bold", inherit.aes = FALSE)
-dev.off()
+garbage=dev.off()
 ############################################################################

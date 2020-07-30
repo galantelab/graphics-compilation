@@ -14,4 +14,4 @@ res = rcorr(as.matrix(data),type="spearman")
 pdf("correlation_plot.pdf")
 corrplot(res$r, p.mat = res$P, insig = "label_sig", sig.level = c(.001, .01, .05), 
          pch.cex = .9, method = "circle", tl.cex = 0.8, tl.col = "black", tl.srt = 45, type = "lower", order = "hclust")
-dev.off()
+garbage=dev.off()

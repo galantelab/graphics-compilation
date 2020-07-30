@@ -18,10 +18,10 @@ regions = makeGRangesFromDataFrame(data)
 pdf("plot_coverage.pdf")
 kp <- plotKaryotype(genome="hg38", main="Plot coverage")
 kpPlotCoverage(kp, data=regions)
-dev.off()
+garbage=dev.off()
 
 #Make plot with some chromosomes
 pdf("plot_coverage2.pdf", width=5, height=3)
 kp <- plotKaryotype(genome="hg38", main="Plot coverage", chromosomes=c("chr4","chr17","chrX"))
 kpPlotCoverage(kp, data=regions)
-dev.off()
+garbage=dev.off()

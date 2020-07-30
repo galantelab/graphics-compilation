@@ -25,4 +25,4 @@ ggmaplot(df, main = "MA plot",
             axis.title.x = element_text(size=9), 
             axis.title.y = element_text(size=9), 
             legend.text = element_text(size=8))
-dev.off()
+garbage=dev.off()

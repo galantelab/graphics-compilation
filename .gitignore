@@ -95,7 +95,7 @@ t/
 *.db
 *.perldb
 *.csv
-*.tsv
+#*.tsv
 *.dat
 #*.data
 *.log
